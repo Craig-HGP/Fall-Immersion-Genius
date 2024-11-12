@@ -4,27 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Landing Page</title>
-    <style>
-        body {
-          background-color: rgb(255, 251, 0);
-          text-align: center;
-        }
-        
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .image-container {
+            height: 200px;
+            overflow: hidden;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
   
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">MyBrand</a>
+            <a class="navbar-brand" href="#"><img src="images/logo1.jpg"/></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,10 +34,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Pricing</a>
                     </li>
-                    <!-- Blank nav link for the genius to complete -->
+                        <a class="nav-link" href="#">About Us</a>
                     <li class="nav-item">
-                      <!-- Genius work starts here -->
-                        <a class="nav-link" href="#"> Contact Us </a>
+                        <a class="nav-link" href="#"> 123<!-- Complete this nav link --> </a>
                       <!-- Genius work ends here -->
                     </li>
                 </ul>
@@ -51,12 +45,12 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="jumbotron text-center bg-primary text-white py-5">
-        <h2>Welcome to Our Landing Page</h2>
-        <p>Today you will learn about how to make a basic landing page in Bootstrap!</p>
+    <div class="text-center text-black py-5" style="background-image: linear-gradient(to bottom right,rgb(255, 217, 0),orange)">
+        <h1>Let's Get It!</h1>
+        <p>It's time for a tech revolution; are you in or out?</p>
         <!-- Blank button for the student to complete -->
         <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal">
-            Learn More
+            I'M IN!
         </button>
     </div>
 
@@ -65,13 +59,13 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://www.hiddengeniusproject.org/wp-content/uploads/2024/08/IMG_7460.jpg" class="card-img-top" alt="..." width="800px" height="400px">
+                    <img src="https://www.hiddengeniusproject.org/wp-content/uploads/2024/08/IMG_7460.jpg" class="card-img-top image-container" alt="...">
                     <div class="card-body">
-                        <h3 class="card-title">LA5 Geniuses</h3>
-                        <p class="card-text">Feel free to continue to add to the styling of the page! Be as creative as possible!</p>
+                        <h5 class="card-title">What We Do</h5>
+                        <p class="card-text">We strive to brighten the futures of young black people with games and team-building!</p>
                         <!-- Blank button for the genius to complete -->
                         <a href="#" class="btn btn-primary">
-                            Click Here 
+                          SHINE 
                         </a>
                     </div>
                 </div>
@@ -79,13 +73,27 @@
             <!-- Blank card for the genius to complete -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://static.clubs.nfl.com/image/upload/t_editorial_landscape_12_desktop_2x/f_auto/rams/o7tensbkx3nedtspruov.jpg" class="card-img-top" alt="..." width="800px" height="400px">
+                    <img src="https://static.clubs.nfl.com/image/upload/t_editorial_landscape_12_desktop_2x/f_auto/rams/o7tensbkx3nedtspruov.jpg" class="card-img-top image-container" alt="...">
                     <div class="card-body">
                         <!-- Genius work starts here -->
-                        <h4 class="card-title"> Our Services </h4>
-                        <p class="card-text"> Explore the wide range of services we offer, from web development to consulting. </p>
+                        <h5 class="card-title">Who We Are</h5>
+                        <p class="card-text">We're the people you need to get with. Come check us out!</p>
                         <a href="#" class="btn btn-primary">
-                          View Details 
+                          LET'S SEE 
+                        </a>
+                      <!-- Genius work ends here -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.hiddengeniusproject.org/wp-content/uploads/2024/05/edited-UbuntuCenter-GirlYouth_Mentor-1-600x400.png" class="card-img-top image-container" alt="...">
+                    <div class="card-body">
+                        <!-- Genius work starts here -->
+                        <h5 class="card-title">Where We're At</h5>
+                        <p class="card-text">Wherever you find melanin. We're all about community.</p>
+                        <a href="#" class="btn btn-primary">
+                          GET THERE 
                         </a>
                       <!-- Genius work ends here -->
                     </div>
@@ -99,17 +107,17 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="exampleModalLabel">Modal title</h4>
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <!-- Genius work starts here -->
-                    <p> Get in touch with our team to learn more about how we can help your business grow. </p>
+                    <p> Title goes here! </p>
                     <!-- Genius work ends here-->
                 </div>
                 <div class="modal-footer">
                     <!-- Genius work starts here -->
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Close </button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> OK </button>
                     <!-- Genius work ends here -->
                 </div>
             </div>
@@ -118,13 +126,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-
-    
-
-
 </body>
 </html>
