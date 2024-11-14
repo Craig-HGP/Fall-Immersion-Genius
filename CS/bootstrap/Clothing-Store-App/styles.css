@@ -1,0 +1,15 @@
+/* Genius can add custom styles here if needed */
+
+.jumbotron {
+    background-image: url('Images/Hero_BG.jpg');
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-family: fantasy;
+    text-shadow: 2px 2px #000;
+}
+
+h5, p, button, a{
+    font-family: Copperplate;
+    font-weight: bolder;
+}
